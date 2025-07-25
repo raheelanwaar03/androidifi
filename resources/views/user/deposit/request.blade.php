@@ -32,7 +32,7 @@
                                                 onclick="copyToClipboard('account-number')">Copy</span>
                                         </h4>
                                         <h4 class="text-white">Type : {{ $wallet->type }}</h4>
-                                        <h4 class="text-white">Minimum Amount : {{ $wallet->limit }}</h4>
+                                        <h4 class="text-white">Minimum Amount : {{ $wallet->limit }}$</h4>
                                         <hr>
                                         <p class="mb-0">Note : {{ $wallet->note }}</p>
                                     </div>
