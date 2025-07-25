@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('deposit_wallets', function (Blueprint $table) {
             $table->id();
             $table->string('number');
-            $table->string('onwer');
             $table->string('type');
             $table->string('limit');
             $table->string('note')->nullable();

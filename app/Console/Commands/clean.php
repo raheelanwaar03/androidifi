@@ -66,13 +66,11 @@ class clean extends Command
         // adding wallet
 
         $wallet = new DepositWallet();
-        $wallet->number = 'asdfasvsvqerrfavafq390e5ruavjasd89f67u';
-        $wallet->onwer = 'skindar';
-        $wallet->type = 'trc';
+        $wallet->number = '0x0a67f26dd404ffcbd43da972925c9f219e9659de';
+        $wallet->type = 'Web20';
         $wallet->note = 'user can enter some information here like pay me through binance';
         $wallet->status = '1';
         $wallet->limit = '120';
         $wallet->save();
-
     }
 }

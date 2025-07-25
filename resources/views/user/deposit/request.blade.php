@@ -31,7 +31,6 @@
                                             <span class="copy-icon btn btn-sm btn-primary"
                                                 onclick="copyToClipboard('account-number')">Copy</span>
                                         </h4>
-                                        <h4 class="text-white">User Name : {{ $wallet->onwer }}</h4>
                                         <h4 class="text-white">Type : {{ $wallet->type }}</h4>
                                         <h4 class="text-white">Minimum Amount : {{ $wallet->limit }}</h4>
                                         <hr>
