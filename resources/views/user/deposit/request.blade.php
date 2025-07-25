@@ -26,7 +26,7 @@
                                         <h4 class="text-white d-inline">Admin Wallet Details</h4>
                                         <img src="{{ asset('asset/images/profile/1.jpg') }}" alt=""
                                             class="img-fluid mt-4 mb-4 w-100 rounded">
-                                        <h4 class="text-white">Account Number : <span
+                                        <h4 class="text-white">Wallet : <span
                                                 id="account-number">{{ $wallet->number }}</span>
                                             <span class="copy-icon btn btn-sm btn-primary"
                                                 onclick="copyToClipboard('account-number')">Copy</span>
