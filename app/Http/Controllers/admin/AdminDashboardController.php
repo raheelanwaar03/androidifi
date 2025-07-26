@@ -57,7 +57,6 @@ class AdminDashboardController extends Controller
         $user->name = $request->name;
         $user->phone = $request->phone;
         $user->balance = $request->balance;
-        $user->airdrop = $request->airdrop;
         $user->save();
         return redirect()->back()->with('success', 'User Updated');
     }
@@ -86,7 +85,6 @@ class AdminDashboardController extends Controller
         $user = User::find($id);
         $user->status = 'approved';
         $user->save();
-        return redirect()->back()->with('success','User Approved');
-
+        return redirect()->back()->with('success', 'User Approved');
     }
 }

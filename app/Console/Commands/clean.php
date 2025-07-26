@@ -67,7 +67,7 @@ class clean extends Command
 
         $wallet = new DepositWallet();
         $wallet->number = '0x0a67f26dd404ffcbd43da972925c9f219e9659de';
-        $wallet->type = 'Web20';
+        $wallet->type = 'Bep20 or Erc20';
         $wallet->note = 'user can enter some information here like pay me through binance';
         $wallet->status = '1';
         $wallet->limit = '120';
