@@ -27,15 +27,19 @@ class PlansMangementController extends Controller
         $fourth_commission =  $request->investment * 0.15 / 100;
         $fifth_commission =  $request->investment * 0.10 / 100;
 
+        if (auth()->user()->balance == 0) {
+            return redirect()->back()->with('error', 'You have not enough balance');
+        }
+
+        if (auth()->user()->balance < $plan->min_invest) {
+            return redirect()->back()->with('error', 'You have not enough balance');
+        }
+
         if ($request->investment < $plan->min_invest) {
             return redirect()->back()->with('error', 'Enter amount is less than limit');
         }
         if ($request->investment > $plan->max_invest) {
             return redirect()->back()->with('error', 'Enter amount is greater than limit');
-        }
-
-        if (auth()->user()->balance = 0) {
-            return redirect()->back()->with('error', 'Your account is empty');
         }
         // deduction balance from user account
         $user = User::where('id', auth()->user()->id)->first();
