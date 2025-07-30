@@ -39,9 +39,10 @@
                                                     @endif
                                                 </td>
                                                 <td class="d-flex justify-content-center align-items-center">
-                                                    <a href="{{ route('Admin.Make.Deposit.Approved', $item->id) }}"
+                                                    <a href="{{ route('Admin.Make.Withdrawal.Approved', $item->id) }}"
                                                         class="btn btn-primary">Approve</a>
-                                                    <a href="#" class="btn btn-danger">Reject</a>
+                                                    <a href="{{ route('Admin.Make.Withdrawal.Rejected', $item->id) }}"
+                                                        class="btn btn-danger">Reject</a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -49,15 +50,10 @@
                                     <tfoot>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Min Investment</th>
-                                            <th>Max Investment</th>
-                                            <th>Referral Income</th>
-                                            <th>Level Income</th>
-                                            <th>Min_Commission</th>
-                                            <th>Max_Commission</th>
-                                            <th>Min_Profit</th>
-                                            <th>Max_Profit</th>
-                                            <th>Expiry</th>
+                                            <th>Amount</th>
+                                            <th>Account</th>
+                                            <th>Type</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>

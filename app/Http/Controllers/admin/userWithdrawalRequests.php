@@ -31,4 +31,27 @@ class userWithdrawalRequests extends Controller
         $withdrawalRequests = UserWithdraw::where('status', 'rejected')->get();
         return view('admin.withdrawal.rejected', compact('withdrawalRequests'));
     }
+
+    // action on withdrawal requests
+    public function makeApproved($id)
+    {
+        $withdrawal = UserWithdraw::findOrFail($id);
+        $withdrawal->status = 'approved';
+        $withdrawal->save();
+        return redirect()->back()->with('success', 'Withdrawal request approved successfully.');
+    }
+    public function makeRejected($id)
+    {
+        $withdrawal = UserWithdraw::findOrFail($id);
+        $withdrawal->status = 'rejected';
+        $withdrawal->save();
+        return redirect()->back()->with('success', 'Withdrawal request rejected successfully.');
+    }
+    public function makePending($id)
+    {
+        $withdrawal = UserWithdraw::findOrFail($id);
+        $withdrawal->status = 'pending';
+        $withdrawal->save();
+        return redirect()->back()->with('success', 'Withdrawal request set to pending successfully.');
+    }
 }

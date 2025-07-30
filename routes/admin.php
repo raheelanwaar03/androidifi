@@ -44,4 +44,8 @@ Route::name('Admin.')->prefix('Admin')->middleware('admin', 'auth')->group(funct
     Route::get('/Pending/Withdrawal/Requests', [userWithdrawalRequests::class, 'pending_withdrawal'])->name('Pending.Withdrawal.Requests');
     Route::get('/Approved/Withdrawal/Requests', [userWithdrawalRequests::class, 'approved_withdrawal'])->name('Approved.Withdrawal.Requests');
     Route::get('/Rejected/Withdrawal/Requests', [userWithdrawalRequests::class, 'rejected_withdrawal'])->name('Rejected.Withdrawal.Requests');
+    // action on withdrawal requests
+    Route::get('/Make/Withdrawal/Approved/{id}', [userWithdrawalRequests::class, 'makeApproved'])->name('Make.Withdrawal.Approved');
+    Route::get('/Make/Withdrawal/Rejected/{id}', [userWithdrawalRequests::class, 'makeRejected'])->name('Make.Withdrawal.Rejected');
+    Route::get('/Make/Withdrawal/Pending/{id}', [userWithdrawalRequests::class, 'makePending'])->name('Make.Withdrawal.Pending');
 });
