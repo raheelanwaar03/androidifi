@@ -70,7 +70,7 @@ class clean extends Command
         $wallet->type = 'Bep20 or Erc20';
         $wallet->note = 'user can enter some information here like pay me through binance';
         $wallet->status = '1';
-        $wallet->limit = '120';
+        $wallet->limit = '10';
         $wallet->save();
     }
 }

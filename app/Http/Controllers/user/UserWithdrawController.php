@@ -44,8 +44,14 @@ class UserWithdrawController extends Controller
             return redirect()->back()->with('error', 'you have not enough balance');
         }
 
+        // user can only request withdraw of 10$
+        if ($validated['amount'] > 10) {
+            return redirect()->back()->with('error', 'You can only request withdraw of 10$');
+        }
+
+
         // getting user deposit date
-        $user_deposit = Deposit::where('user_id',auth()->user()->id)->latest()->get();
+        $user_deposit = Deposit::where('user_id', auth()->user()->id)->latest()->get();
         // $user_deposit ;
 
 
