@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\AdminDashboardController;
 use App\Http\Controllers\admin\adminDepositController;
 use App\Http\Controllers\admin\AllotPlanToUserController;
 use App\Http\Controllers\admin\PlansController;
+use App\Http\Controllers\admin\userWithdrawalRequests;
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,9 +19,9 @@ Route::name('Admin.')->prefix('Admin')->middleware('admin', 'auth')->group(funct
     Route::get('/Edit/User/{id}', [AdminDashboardController::class, 'editUser'])->name('Edit.User');
     Route::post('/Update/User/{id}', [AdminDashboardController::class, 'updateUser'])->name('Update.User');
     // Change user Status
-    Route::get('Make/User/Pending/{id}',[AdminDashboardController::class,'makePending'])->name('Make.User.Pending');
-    Route::get('Make/User/Rejected/{id}',[AdminDashboardController::class,'makeReject'])->name('Make.User.Rejected');
-    Route::get('Make/User/Approved/{id}',[AdminDashboardController::class,'makeApproved'])->name('Make.User.Approved');
+    Route::get('Make/User/Pending/{id}', [AdminDashboardController::class, 'makePending'])->name('Make.User.Pending');
+    Route::get('Make/User/Rejected/{id}', [AdminDashboardController::class, 'makeReject'])->name('Make.User.Rejected');
+    Route::get('Make/User/Approved/{id}', [AdminDashboardController::class, 'makeApproved'])->name('Make.User.Approved');
     // Plans Route
     Route::get('/Add/Plans', [PlansController::class, 'add'])->name('Add.Plan');
     Route::post('/Store/Plan', [PlansController::class, 'store'])->name('Store.Plan');
@@ -38,4 +39,9 @@ Route::name('Admin.')->prefix('Admin')->middleware('admin', 'auth')->group(funct
     Route::get('Allot/Plans', [AllotPlanToUserController::class, 'index'])->name('Allot.Plan');
     Route::post('Save/Allot/Plan', [AllotPlanToUserController::class, 'savePlan'])->name('Save.Allot.Plan');
     Route::get('History/Allot/Plans', [AllotPlanToUserController::class, 'history'])->name('History.Alloting.Plans');
+    // withdrawal requests
+    Route::get('/Today/Withdrawal/Requests', [userWithdrawalRequests::class, 'today_withdrawal'])->name('Today.Withdrawal.Requests');
+    Route::get('/Pending/Withdrawal/Requests', [userWithdrawalRequests::class, 'pending_withdrawal'])->name('Pending.Withdrawal.Requests');
+    Route::get('/Approved/Withdrawal/Requests', [userWithdrawalRequests::class, 'approved_withdrawal'])->name('Approved.Withdrawal.Requests');
+    Route::get('/Rejected/Withdrawal/Requests', [userWithdrawalRequests::class, 'rejected_withdrawal'])->name('Rejected.Withdrawal.Requests');
 });

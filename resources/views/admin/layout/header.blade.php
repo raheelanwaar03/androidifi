@@ -312,10 +312,10 @@
                             <span class="nav-text">Withdraw</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Today Requests</a></li>
-                            <li><a href="#">Pending Requests</a></li>
-                            <li><a href="#">Rejected Requests</a></li>
-                            <li><a href="#">Approved Requests</a></li>
+                            <li><a href="{{ route('Admin.Today.Withdrawal.Requests') }}">Today Requests</a></li>
+                            <li><a href="{{ route('Admin.Pending.Withdrawal.Requests') }}">Pending Requests</a></li>
+                            <li><a href="{{ route('Admin.Rejected.Withdrawal.Requests') }}">Rejected Requests</a></li>
+                            <li><a href="{{ route('Admin.Approved.Withdrawal.Requests') }}">Approved Requests</a></li>
                         </ul>
                     </li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
