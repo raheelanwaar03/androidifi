@@ -40,14 +40,14 @@
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label for="min_roi">Minimum Percentage</label>
-                                                    <input type="number" name="min_roi_per" id="min_roi"
+                                                    <input type="number" name="min_roi_per" step="0.001" id="min_roi"
                                                         class="form-control" value="{{ $plan->min_roi_per }}">
                                                 </div>
                                             </div>
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label for="max_roi">Maximum Percentage</label>
-                                                    <input type="number" name="max_roi_per" id="max_roi"
+                                                    <input type="number" name="max_roi_per" step="0.001" id="max_roi"
                                                         value="{{ $plan->max_roi_per }}" class="form-control">
                                                 </div>
                                             </div>
@@ -56,15 +56,17 @@
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label for="min_profit">Minimum Profit</label>
-                                                    <input type="number" name="min_roi_profit" id="min_profit"
-                                                        class="form-control" value="{{ $plan->min_roi_profit }}">
+                                                    <input type="number" name="min_roi_profit" step="0.001"
+                                                        id="min_profit" class="form-control"
+                                                        value="{{ $plan->min_roi_profit }}">
                                                 </div>
                                             </div>
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label for="max_profit">Maximum Profit</label>
-                                                    <input type="number" name="max_roi_profit" id="max_profit"
-                                                        value="{{ $plan->max_roi_profit }}" class="form-control">
+                                                    <input type="number" name="max_roi_profit" step="0.001"
+                                                        id="max_profit" value="{{ $plan->max_roi_profit }}"
+                                                        class="form-control">
                                                 </div>
                                             </div>
                                         </div>

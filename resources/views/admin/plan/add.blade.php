@@ -44,15 +44,17 @@
                                             <div class="col-md-6 mb-3">
                                                 <div class="form-group">
                                                     <label for="min">Minimum Percentage</label>
-                                                    <input type="number" placeholder="Enter Minimum percentage"
-                                                        name="min_roi_per" id="min" class="form-control">
+                                                    <input type="number" step="0.001"
+                                                        placeholder="Enter Minimum percentage" name="min_roi_per"
+                                                        id="min" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <div class="form-group">
                                                     <label for="maxi">Maximum Percentage</label>
-                                                    <input type="number" placeholder="Enter Maximum percentage"
-                                                        name="max_roi_per" id="max" class="form-control">
+                                                    <input type="number" step="0.001"
+                                                        placeholder="Enter Maximum percentage" name="max_roi_per"
+                                                        id="max" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -60,15 +62,15 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="min_profit">Minimum Profit</label>
-                                                    <input type="number" name="min_roi_profit" id="min_profit"
-                                                        class="form-control" placeholder="Minimum Profit">
+                                                    <input type="number" step="0.001" name="min_roi_profit"
+                                                        id="min_profit" class="form-control" placeholder="Minimum Profit">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="max_profit">Maximum Profit</label>
-                                                    <input type="number" name="max_roi_profit" id="max_profit"
-                                                        placeholder="Maximum Profit" class="form-control">
+                                                    <input type="number" step="0.001" name="max_roi_profit"
+                                                        id="max_profit" placeholder="Maximum Profit" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
