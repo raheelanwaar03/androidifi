@@ -57,6 +57,6 @@ class TeamMangment extends Controller
                 $statement->save();
             }
         }
-        return redirect()->back()->with('success', 'Roi Given to All Users');
+        return redirect()->back()->with('success', 'Roi added to your account');
     }
 }
