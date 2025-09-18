@@ -59,10 +59,8 @@
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#services">Services</a></li>
-                                <li><a href="#roadmap">Roadmap</a></li>
                                 <li><a href="#Video">Video</a></li>
                                 <li><a target="_blank" href="{{ asset('home/pdf/fx Tread Presentation.pdf') }}">Plan</a></li>
-                                <li><a href="#team">Team</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
 
@@ -706,7 +704,7 @@
     <!-- ##### FAQ & Timeline Area End ##### -->
 
     <!-- ##### token-distribution Area start ##### -->
-    <section class="token-distribution">
+    {{-- <section class="token-distribution">
         <div class="container">
 
             <div class="section-heading text-center">
@@ -760,126 +758,8 @@
             </div>
         </div>
 
-    </section>
+    </section> --}}
     <!-- ##### token-distribution Area End ##### -->
-
-
-    <!-- ##### Team Area Start ##### -->
-    <section class="our_team_area section-padding-0-0 clearfix" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-
-                        <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Meet Our Awesome Team</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">we pride ourselves on our exceptional team of professionals who are dedicated to revolutionizing the world of cryptocurrency exchange. With a blend of expertise, passion, and innovation, our team is committed to providing you with the best possible experience in the digital asset market.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Image -->
-                        <div class="team-member-thumb">
-                            <img draggable="false" src="{{ asset('home/img/team-img/1.png') }}" class="center-block" alt="">
-                        </div>
-                        <!-- Team Info -->
-                        <div class="team-info">
-                            <h5>Sunny khan</h5>
-                            <p>Executive Officer</p>
-                        </div>
-                        <!-- Social Icon -->
-                        <!-- <div class="team-social-icon">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-skype"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.3s">
-                        <!-- Image -->
-                        <div class="team-member-thumb">
-                            <img draggable="false" src="{{ asset('home/img/team-img/2.png') }}" class="center-block" alt="">
-                        </div>
-                        <!-- Team Info -->
-                        <div class="team-info">
-                            <h5>Ajoy Das</h5>
-                            <p>Business Development</p>
-                        </div>
-                        <!-- Social Icon -->
-                        <!-- <div class="team-social-icon">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-skype"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Image -->
-                        <div class="team-member-thumb">
-                            <img draggable="false" src="{{ asset('home/img/team-img/3.png') }}" class="center-block" alt="">
-                        </div>
-                        <!-- Team Info -->
-                        <div class="team-info">
-                            <h5>Afroza Mou</h5>
-                            <p>UX/UI Designer</p>
-                        </div>
-                        <!-- Social Icon -->
-                        <!-- <div class="team-social-icon">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-skype"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <!-- Single Team Member -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Image -->
-                        <div class="team-member-thumb">
-                            <img draggable="false" src="{{ asset('home/img/team-img/4.png') }}" class="center-block" alt="">
-                        </div>
-                        <!-- Team Info -->
-                        <div class="team-info">
-                            <h5>Lim Sarah</h5>
-                            <p>Head of Marketing</p>
-                        </div>
-                        <!-- Icon -->
-                        <!-- <div class="team-social-icon">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-skype"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ##### Team Area End ##### -->
 
 
     <!-- ##### Footer Area Start ##### -->
@@ -1002,7 +882,7 @@
                                 <p>Mailing Address:xxx0 E. Union Ave</p>
                                 <p>Suite 1100. Denver, CO 80237</p>
                                 <p>+1-212-456-7890</p>
-                                <p>support@yourdomain.com</p>
+                                <p>support@androidfi.xyz</p>
                             </div>
                         </div>
                     </div>
