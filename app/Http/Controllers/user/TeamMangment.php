@@ -26,7 +26,6 @@ class TeamMangment extends Controller
         foreach ($userPlans as $item) {
             $plan = AdminPlans::where('id', $item->plan_id)->first();
             // checking plan expire
-
             $planBuyDate = Carbon::parse($item->created_at);
             // Get the current date
             $currentDate = Carbon::now();
