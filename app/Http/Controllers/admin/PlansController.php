@@ -28,8 +28,6 @@ class PlansController extends Controller
         $plan->max_invest = $request->max_invest;
         $plan->min_roi_per = $request->min_roi_per;
         $plan->max_roi_per = $request->max_roi_per;
-        $plan->min_roi_profit = $request->min_roi_profit;
-        $plan->max_roi_profit = $request->max_roi_profit;
         $plan->expiry = $request->expiry;
         $plan->save();
         return redirect()->route('Admin.All.Plans')->with('success', 'Plan Added Successfully');

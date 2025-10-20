@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $register_id = 'UNC' . rand(111111, 999999);
+        $register_id = '0x' . rand(111111, 999999);
 
         $user = User::create([
             'name' => $request->name,

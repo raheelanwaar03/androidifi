@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('max_invest');
             $table->string('min_roi_per');
             $table->string('max_roi_per');
-            $table->string('min_roi_profit');
-            $table->string('max_roi_profit');
+            // $table->string('min_roi_profit');
+            // $table->string('max_roi_profit');
             $table->string('expiry');
             $table->string('status')->default('active');
             $table->timestamps();

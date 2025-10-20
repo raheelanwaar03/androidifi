@@ -49,13 +49,6 @@
                                                             </div>
                                                         </div>
                                                         <div class="d-flex justify-content-between align-items-center">
-                                                            <h5>Total Roi</h5>
-                                                            <div class="d-flex">
-                                                                <h6>{{ $item->min_roi_profit }}$</h6>—
-                                                                <h6>{{ $item->max_roi_profit }}$</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between align-items-center">
                                                             <h5>Validity</h5>
                                                             <h6>{{ $item->expiry }} Days</h6>
                                                         </div>

@@ -127,6 +127,6 @@ class AdminDashboardController extends Controller
                 $statement->save();
             }
         }
-        return redirect()->back()->with('success', 'Roi added to your account');
+        return redirect()->back()->with('success', 'Roi added to all users');
     }
 }

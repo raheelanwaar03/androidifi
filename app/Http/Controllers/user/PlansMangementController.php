@@ -21,11 +21,11 @@ class PlansMangementController extends Controller
     {
         $plan = AdminPlans::find($id);
         // gettting commission on investment
-        $first_commission =  $request->investment * 1 / 100;
-        $second_commission =  $request->investment * 0.30 / 100;
-        $third_commission =  $request->investment * 0.20 / 100;
-        $fourth_commission =  $request->investment * 0.15 / 100;
-        $fifth_commission =  $request->investment * 0.10 / 100;
+        $first_commission =  $request->investment * 10 / 100;
+        $second_commission =  $request->investment * 1 / 100;
+        $third_commission =  $request->investment * 1 / 100;
+        $fourth_commission =  $request->investment * 1 / 100;
+        $fifth_commission =  $request->investment * 1 / 100;
 
         if (auth()->user()->balance == 0) {
             return redirect()->back()->with('error', 'You have not enough balance');
@@ -141,6 +141,6 @@ class PlansMangementController extends Controller
     public function soldPlans()
     {
         $plans = StorePlan::get();
-        return view('admin.plan.sold',compact('plans'));
+        return view('admin.plan.sold', compact('plans'));
     }
 }

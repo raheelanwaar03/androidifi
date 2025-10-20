@@ -46,20 +46,21 @@
                                                             required>
                                                     </div>
                                                     <div class="form-group mt-2">
-                                                        <label for="account" class="form-label">Account Number</label>
+                                                        <label for="account" class="form-label">Wallet</label>
                                                         <input type="text" class="form-control" name="account"
-                                                            id="account" placeholder="Enter your account number" required>
+                                                            id="account" placeholder="Enter your wallet" required>
                                                     </div>
                                                     <div class="form-group mt-2">
-                                                        <label for="user_name" class="form-label">Account Holder
-                                                            Name</label>
+                                                        <label for="user_name" class="form-label">Username</label>
                                                         <input type="text" class="form-control" name="name"
-                                                            id="user_name" placeholder="Account Holder Name" required>
+                                                            id="user_name" placeholder="Username" required>
                                                     </div>
                                                     <div class="form-group mt-2">
                                                         <label for="type" class="form-label">Type</label>
-                                                        <input type="text" class="form-control" name="type"
-                                                            id="type" placeholder="Trc 20 Etc." required>
+                                                        <select name="type" id="type" class="form-control" style="color:black">
+                                                            <option value="Bep20">Bep20</option>
+                                                            <option value="Trc20">Trc20</option>
+                                                        </select>
                                                     </div>
                                                     <div class="m-2">
                                                         <button type="submit"

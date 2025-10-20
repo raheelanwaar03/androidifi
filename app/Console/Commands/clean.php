@@ -45,7 +45,7 @@ class clean extends Command
         $user->password = Hash::make('asdfasdf');
         $user->status = 'approved';
         $user->role = 'admin';
-        $user->register_id = 'UNC123458';
+        $user->register_id = '0x123457';
         $user->save();
 
 
@@ -59,7 +59,7 @@ class clean extends Command
         $user->password = Hash::make('asdfasdf');
         $user->role = 'user';
         $user->status = 'approved';
-        $user->register_id = 'UNC123456';
+        $user->register_id = '0x123456';
         $user->email_verified_at = '2024-04-18 00:43:27';
         $user->save();
 

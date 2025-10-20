@@ -58,7 +58,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row align-items-center mb-3">
+                                        {{-- <div class="row align-items-center mb-3">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="min_profit">Minimum Profit</label>
@@ -73,7 +73,7 @@
                                                         id="max_profit" placeholder="Maximum Profit" class="form-control">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="col-md-12 mb-3">
                                             <div class="form-group">
                                                 <label for="expiry">Expire Date</label>

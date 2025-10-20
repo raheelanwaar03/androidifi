@@ -10,7 +10,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Sold Plans</h4>
-                            <a href="{{ route('Admin.Add.Plan') }}" class="btn btn-primary">Daily Roi</a>
+                            <a href="{{ route('Admin.Give.Daily.Roi') }}" class="btn btn-primary">Daily Roi</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">

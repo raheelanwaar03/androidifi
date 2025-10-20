@@ -22,8 +22,6 @@
                                             <th>Max Invest</th>
                                             <th>Min %</th>
                                             <th>Max %</th>
-                                            <th>Min Profit</th>
-                                            <th>Max Profit</th>
                                             <th>Expiry</th>
                                             <th>Status</th>
                                             <th>Action</th>
@@ -37,8 +35,6 @@
                                                 <td>{{ $item->max_invest }}$</td>
                                                 <td>{{ $item->min_roi_per }}%</td>
                                                 <td>{{ $item->max_roi_per }}%</td>
-                                                <td>{{ $item->min_roi_profit }}$</td>
-                                                <td>{{ $item->max_roi_profit }}$</td>
                                                 <td>{{ $item->expiry }}Days</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td class="d-flex justify-content-center align-items-center">
@@ -57,8 +53,6 @@
                                             <th>Max Invest</th>
                                             <th>Min %</th>
                                             <th>Max %</th>
-                                            <th>Min Profit</th>
-                                            <th>Max Profit</th>
                                             <th>Expiry</th>
                                             <th>Status</th>
                                             <th>Action</th>

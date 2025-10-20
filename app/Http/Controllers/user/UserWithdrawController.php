@@ -52,8 +52,11 @@ class UserWithdrawController extends Controller
 
         // getting user deposit date
         $user_deposit = Deposit::where('user_id', auth()->user()->id)->latest()->get();
-        // $user_deposit ;
 
+        $request_check = UserWithdraw::where('user_id', auth()->user()->id)->where('status', 'pending')->first();
+        if ($request_check) {
+            return redirect()->back()->with('error', 'you have already requested for withdraw please wait for approval');
+        }
 
         $withdraw = new UserWithdraw();
         $withdraw->user_id = auth()->user()->id;
