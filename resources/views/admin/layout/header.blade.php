@@ -80,7 +80,7 @@
         <div class="nav-header">
             <a href="{{ route('User.Dashboard') }}" class="brand-logo">
                 <div class="logo">
-                    <img src="{{ asset('asset/logo.png') }}" class="small" height="120px" width="120px"
+                    <img src="{{ asset('asset/logo.png') }}" class="small" height="80px" width="80px"
                         alt="">
                 </div>
             </a>

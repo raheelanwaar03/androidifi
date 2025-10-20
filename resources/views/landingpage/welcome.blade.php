@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>{{env('APP_NAME')}} | Welcome to new univers</title>
+    <title>{{ env('APP_NAME') }} | Welcome to new univers</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('asset/logo.png') }}">
@@ -38,7 +38,8 @@
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="{{ route('LandingPage') }}"><img draggable="false" src="{{ asset('asset/logo.png') }}" height="150px" width="150" alt="logo"></a>
+                    <a class="nav-brand" href="{{ route('LandingPage') }}"><img draggable="false"
+                            src="{{ asset('asset/logo.png') }}" height="80px" width="80" alt="logo"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -60,7 +61,8 @@
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#services">Services</a></li>
                                 <li><a href="#Video">Video</a></li>
-                                <li><a target="_blank" href="{{ asset('home/pdf/fx Tread Presentation.pdf') }}">Plan</a></li>
+                                {{-- <li><a target="_blank" href="{{ asset('home/pdf/fx Tread Presentation.pdf') }}">Plan</a>
+                                </li> --}}
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
 
@@ -78,8 +80,10 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area clearfix dzsparallaxer auto-init none" data-options='{direction: "normal"}' id="home">
-        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url({{ asset('home/img/bg-img/bg-5.png') }})"></div>
+    <section class="welcome_area clearfix dzsparallaxer auto-init none" data-options='{direction: "normal"}'
+        id="home">
+        <div class="divimage dzsparallaxer--target"
+            style="width: 101%; height: 130%; background-image: url({{ asset('home/img/bg-img/bg-5.png') }})"></div>
 
         <!-- Hero Content -->
         <div class="hero-content transparent">
@@ -97,13 +101,17 @@
                             <div class="promo-section">
                                 <div class="integration-link">
                                     <span class="integration-icon">
-                                        <img draggable="false" src="{{ asset('home/img/svg/img-dollar.svg') }}" width="24" height="24" alt="">
+                                        <img draggable="false" src="{{ asset('home/img/svg/img-dollar.svg') }}"
+                                            width="24" height="24" alt="">
                                     </span>
                                     <span class="integration-text">Discover a new ways to enjoy your World!</span>
                                 </div>
                             </div>
-                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">Get Most Benefits of ICO, crypto & Forex Trading.</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</p>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">Get Most Benefits of ICO, crypto & Forex
+                                Trading.</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year exprience in business
+                                consultting arena. We have over 15 year exprience in business consultting arena and
+                                artficial intelligence.</p>
                             <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="#" class="btn dream-btn mr-3">Join Now</a>
                                 <a href="#" class="btn dream-btn"> Whitepaper</a>
@@ -140,7 +148,10 @@
                     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay="0.3s">Why Choose Our Investment Solutions</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Partner with us for a journey towards financial success tailored specifically to you. Our investment solutions stand out due to their tailored approach, precision, and commitment to your financial growth. We prioritize your unique goals, crafting strategies that align with your aspirations and risk tolerance.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Partner with us for a journey towards financial success
+                    tailored specifically to you. Our investment solutions stand out due to their tailored approach,
+                    precision, and commitment to your financial growth. We prioritize your unique goals, crafting
+                    strategies that align with your aspirations and risk tolerance.</p>
             </div>
 
 
@@ -153,7 +164,9 @@
                             <img draggable="false" src="img/services/1.png') }}" alt="">
                         </div>
                         <h6>P2P Trading</h6>
-                        <p>Peer-to-peer (P2P) trading represents a revolutionary way of exchanging assets directly between individuals, eliminating the need for intermediaries like banks or traditional financial institutions.</p>
+                        <p>Peer-to-peer (P2P) trading represents a revolutionary way of exchanging assets directly
+                            between individuals, eliminating the need for intermediaries like banks or traditional
+                            financial institutions.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -164,7 +177,10 @@
                             <img draggable="false" src="img/services/2.png') }}" alt="">
                         </div>
                         <h6>Forex Trading</h6>
-                        <p>Forex trading, also known as foreign exchange trading or {{ env('APP_NAME') }} trading, is the global marketplace for buying and selling currencies. It operates 24 hours a day, five days a week, and involves trading currency pairs, where one currency is exchanged for another at an agreed-upon price.</p>
+                        <p>Forex trading, also known as foreign exchange trading or {{ env('APP_NAME') }} trading, is
+                            the global marketplace for buying and selling currencies. It operates 24 hours a day, five
+                            days a week, and involves trading currency pairs, where one currency is exchanged for
+                            another at an agreed-upon price.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -175,7 +191,8 @@
                             <img draggable="false" src="img/services/3.png') }}" alt="">
                         </div>
                         <h6>Nifty Bank Trading</h6>
-                        <p>Nifty Bank trading involves engaging in the Indian stock market through the Nifty Bank Index, comprising major banking sector stocks listed on the National Stock Exchange (NSE).</p>
+                        <p>Nifty Bank trading involves engaging in the Indian stock market through the Nifty Bank Index,
+                            comprising major banking sector stocks listed on the National Stock Exchange (NSE).</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -186,7 +203,9 @@
                             <img draggable="false" src="img/services/4.png') }}" alt="">
                         </div>
                         <h6>Share Market</h6>
-                        <p>The share market, also known as the stock market, is a dynamic and pivotal aspect of the global financial system. It serves as a platform where individuals and institutions buy and sell shares or ownership stakes in publicly traded companies.</p>
+                        <p>The share market, also known as the stock market, is a dynamic and pivotal aspect of the
+                            global financial system. It serves as a platform where individuals and institutions buy and
+                            sell shares or ownership stakes in publicly traded companies.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -197,7 +216,10 @@
                             <img draggable="false" src="img/services/5.png') }}" alt="">
                         </div>
                         <h6>Trading</h6>
-                        <p>Trading is the art of buying and selling financial instruments, such as stocks, currencies, or commodities, with the aim of making a profit. It involves analyzing market trends, studying price movements, and leveraging various strategies to capitalize on opportunities.</p>
+                        <p>Trading is the art of buying and selling financial instruments, such as stocks, currencies,
+                            or commodities, with the aim of making a profit. It involves analyzing market trends,
+                            studying price movements, and leveraging various strategies to capitalize on opportunities.
+                        </p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -208,7 +230,8 @@
                             <img draggable="false" src="img/services/6.png') }}" alt="">
                         </div>
                         <h6>Spot Trading</h6>
-                        <p>Spot trading refers to the buying and selling of financial instruments, such as stocks, commodities, or cryptocurrencies, for immediate delivery.</p>
+                        <p>Spot trading refers to the buying and selling of financial instruments, such as stocks,
+                            commodities, or cryptocurrencies, for immediate delivery.</p>
                     </div>
                 </div>
             </div>
@@ -223,7 +246,8 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="welcome-meter wow fadeInUp" data-wow-delay="0.7s">
-                        <img draggable="false" src="{{ asset('home/img/core-img/about1.png') }}" class="img-responsive center-block" alt="">
+                        <img draggable="false" src="{{ asset('home/img/core-img/about1.png') }}"
+                            class="img-responsive center-block" alt="">
                         <!-- client meta -->
                         <div class="growing-company text-center mt-30 wow fadeInUp" data-wow-delay="0.8s">
                             <p>* Already growing up <span class="counter">5236</span> company</p>
@@ -237,10 +261,22 @@
                         <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
-                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">ABOUT {{ env('APP_NAME') }} TREAD Looking To Secure Your Financial Future?</h4>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">Our investment plans are designed to provide both guidance and opportunity. With our expertly crafted strategies, discover how even a modest investment can yield substantial returns. Whether you're aiming for short-term gains or long-term stability, our plans cater to your aspirations. Experience the potential to earn significantly more than traditional savings, ensuring your money works as hard as you do. Join us in exploring the world of investment where growth, security, and financial well-being converge. Start investing confidently and pave the way for a prosperous tomorrow.</p>
-                        <p class="wow fadeInUp" data-wow-delay="0.5s">The aim of Company is to provide freedom from financial problems to every member through digital environment.With member's support company will provide technology in every people's hand.</p>
-                        <p class="wow fadeInUp" data-wow-delay="0.5s">Company wants to explain benefits of web and mobile application techonology to solve financial issues. We want to grow internet power for digitalisation.</p>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">ABOUT {{ env('APP_NAME') }} TREAD Looking To
+                            Secure Your Financial Future?</h4>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">Our investment plans are designed to provide
+                            both guidance and opportunity. With our expertly crafted strategies, discover how even a
+                            modest investment can yield substantial returns. Whether you're aiming for short-term gains
+                            or long-term stability, our plans cater to your aspirations. Experience the potential to
+                            earn significantly more than traditional savings, ensuring your money works as hard as you
+                            do. Join us in exploring the world of investment where growth, security, and financial
+                            well-being converge. Start investing confidently and pave the way for a prosperous tomorrow.
+                        </p>
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">The aim of Company is to provide freedom from
+                            financial problems to every member through digital environment.With member's support company
+                            will provide technology in every people's hand.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">Company wants to explain benefits of web and
+                            mobile application techonology to solve financial issues. We want to grow internet power for
+                            digitalisation.</p>
                         <!-- <a class="btn dream-btn mt-30 wow fadeInUp" data-wow-delay="0.6s" href="#">Read More</a> -->
                     </div>
                 </div>
@@ -255,12 +291,12 @@
         <div class="container">
             <div class="section-heading text-center">
 
-                        <div class="dream-dots justify-content-center">
-                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                        </div>
-                        <h2>Watch our demo video</h2>
-                        <!-- <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p> -->
-                    </div>
+                <div class="dream-dots justify-content-center">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <h2>Watch our demo video</h2>
+                <!-- <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p> -->
+            </div>
             <!-- Welcome Video Area -->
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
                 <div class="welcome-video-area" id="Video">
@@ -270,7 +306,8 @@
                     </div>
                     <!-- Video Icon -->
                     <div class="video-icon">
-                        <a href="!https://www.youtube.com/watch?v=gbXEPHsTkgU" class="btn dream-btn video-btn" id="videobtn"><i class="fa fa-play"></i></a>
+                        <a href="!https://www.youtube.com/watch?v=gbXEPHsTkgU" class="btn dream-btn video-btn"
+                            id="videobtn"><i class="fa fa-play"></i></a>
                     </div>
                 </div>
             </div>
@@ -288,7 +325,11 @@
                 <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
             </div>
             <h2 class="wow fadeInUp" data-wow-delay="0.3s">We are trusted</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s" >Our commitment to transparency, security, and integrity sets us apart in the world of {{ env('APP_NAME') }} Tread. With a proven track record of reliability and a steadfast dedication to safeguarding our clients' assets, we've earned the trust of thousands of users worldwide. Rest assured, your investments are in safe hands with our trusted team of experts guiding the way.</p>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">Our commitment to transparency, security, and integrity sets
+                us apart in the world of {{ env('APP_NAME') }} Tread. With a proven track record of reliability and a
+                steadfast dedication to safeguarding our clients' assets, we've earned the trust of thousands of users
+                worldwide. Rest assured, your investments are in safe hands with our trusted team of experts guiding the
+                way.</p>
         </div>
         <div class="container">
             <div class="row">
@@ -355,7 +396,7 @@
                         </div>
                         <!-- Single Cool Detail -->
                         <div class="check">
-                           <div class="value">7.4</div>
+                            <div class="value">7.4</div>
                         </div>
                     </div>
                 </div>
@@ -380,7 +421,9 @@
     <!-- ##### trust Area End ##### -->
 
     <!-- ##### Our roadmap Area start ##### -->
-    <section class="roadmap section-padding-100" style="background: url('{{ asset('home/img/bg-roadmap.png') }}') no-repeat center center;background-size: cover;" id="roadmap">
+    <section class="roadmap section-padding-100"
+        style="background: url('{{ asset('home/img/bg-roadmap.png') }}') no-repeat center center;background-size: cover;"
+        id="roadmap">
 
         <div class="container-fluid">
             <div class="section-heading text-center">
@@ -398,59 +441,79 @@
                         <div style="left:10%" class="data_cir cir_0" data-date="{{ env('APP_NAME') }}&nbsp;Token">
                             <div class="data_cir-content">
                                 <span><span class="roadmap_content_info">LAUNCHING
-                                    DATE<br>
-                                    15/08/2024
-                                    </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/1.svg') }}" alt=""></span></span>
+                                        DATE<br>
+                                        15/08/2024
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/1.svg') }}" alt=""></span></span>
                             </div>
                         </div>
-                        <div style="left:18%" class="data_cir cir_1" data-date="OWN&nbsp;P&nbsp;2&nbsp;P&nbsp;EXCHANGE&nbsp;PLATFORM">
+                        <div style="left:18%" class="data_cir cir_1"
+                            data-date="OWN&nbsp;P&nbsp;2&nbsp;P&nbsp;EXCHANGE&nbsp;PLATFORM">
                             <div class="data_cir-content">
-                                <span><span class="roadmap_content_info"><ul><li><span>LAUNCHING DATE</span></li>
-                                <li><span>10/10/2024</span></li>
+                                <span><span class="roadmap_content_info">
+                                        <ul>
+                                            <li><span>LAUNCHING DATE</span></li>
+                                            <li><span>10/10/2024</span></li>
 
-                                </ul>
-                                </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/2.svg') }}" alt=""></span></span>
+                                        </ul>
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/2.svg') }}" alt=""></span></span>
                             </div>
                         </div>
                         <div style="left:36%" class="data_cir cir_2" data-date="Meta&nbsp;Game">
                             <div class="data_cir-content">
-                                <span><span class="roadmap_content_info"><ul><li><span>LAUNCHING&nbsp;DATE</span></li>
-                                <li><span>10/12/2024</span></li>
-                                </ul>
-                                </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/3.svg') }}" alt=""></span></span>
+                                <span><span class="roadmap_content_info">
+                                        <ul>
+                                            <li><span>LAUNCHING&nbsp;DATE</span></li>
+                                            <li><span>10/12/2024</span></li>
+                                        </ul>
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/3.svg') }}" alt=""></span></span>
                             </div>
                         </div>
                         <div style="left:45%" class="data_cir cir_3" data-date="Decentralised&nbsp;Exchange">
                             <div class="data_cir-content">
-                                <span><span class="roadmap_content_info"><ul><li><span>LAUNCHING&nbsp;DATE</span></li>
-                                <li><span>15/02/2025</span></li>
-                                </ul>
-                                </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/4.svg') }}" alt=""></span></span>
+                                <span><span class="roadmap_content_info">
+                                        <ul>
+                                            <li><span>LAUNCHING&nbsp;DATE</span></li>
+                                            <li><span>15/02/2025</span></li>
+                                        </ul>
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/4.svg') }}" alt=""></span></span>
                             </div>
                         </div>
-                        <div style="left:60%" class="data_cir cir_4 red_crc" data-date="NFT&nbsp;Non&nbsp;-&nbsp;fungible&nbsp;token">
+                        <div style="left:60%" class="data_cir cir_4 red_crc"
+                            data-date="NFT&nbsp;Non&nbsp;-&nbsp;fungible&nbsp;token">
                             <div class="data_cir-content">
-                                <span><span class="roadmap_content_info"><ul><li><span>LAUNCHING DATE</span></li>
-                                <li><span>12/06/2025</span></li>
-                                </ul>
-                                </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/5.svg') }}" alt=""></span></span>
+                                <span><span class="roadmap_content_info">
+                                        <ul>
+                                            <li><span>LAUNCHING DATE</span></li>
+                                            <li><span>12/06/2025</span></li>
+                                        </ul>
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/5.svg') }}" alt=""></span></span>
                             </div>
                         </div>
                         <div style="left:75%" class="data_cir cir_5 next" data-date="Centralised&nbsp;Exchange">
                             <div class="data_cir-content">
-                                <span><span class="roadmap_content_info"><ul><li><span>LAUNCHING DATE</span></li>
-                                <li><span>12/08/2025</span></li>
-                                </ul>
-                                </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/6.svg') }}" alt=""></span></span>
+                                <span><span class="roadmap_content_info">
+                                        <ul>
+                                            <li><span>LAUNCHING DATE</span></li>
+                                            <li><span>12/08/2025</span></li>
+                                        </ul>
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/6.svg') }}" alt=""></span></span>
                             </div>
                         </div>
                         <div style="left:90%" class="data_cir cir_6 next" data-date="Metaverse">
                             <div class="data_cir-content">
-                                <span><span class="roadmap_content_info"><ul>
-                                    <li><span>LAUNCHING DATE</span></li>
-                                <li><span>15/04/2026</span></li>
-                                </ul>
-                                </span><span class="roadmap_img"><img draggable="false" src="img/roadmap-icons/7.svg') }}" alt=""></span></span>
+                                <span><span class="roadmap_content_info">
+                                        <ul>
+                                            <li><span>LAUNCHING DATE</span></li>
+                                            <li><span>15/04/2026</span></li>
+                                        </ul>
+                                    </span><span class="roadmap_img"><img draggable="false"
+                                            src="img/roadmap-icons/7.svg') }}" alt=""></span></span>
                             </div>
                         </div>
 
@@ -501,7 +564,9 @@
                                 <span class="icon ti-mobile"></span>
                             </div>
                             <h3><a href="#">Powerfull Mobile and Online App</a></h3>
-                            <div class="text">Revolutionize your trading experience with our powerful mobile and online app. Seamlessly manage your investments, analyze market trends, and execute trades with ease. Take control of your financial future anytime, anywhere.</div>
+                            <div class="text">Revolutionize your trading experience with our powerful mobile and
+                                online app. Seamlessly manage your investments, analyze market trends, and execute
+                                trades with ease. Take control of your financial future anytime, anywhere.</div>
 
                         </div>
                     </div>
@@ -513,7 +578,9 @@
                                 <span class="icon ti-widget"></span>
                             </div>
                             <h3><a href="#">Brings more Transparency and Speed</a></h3>
-                            <div class="text">Experience heightened transparency and lightning-fast trades on our platform. With real-time data and rapid execution, stay ahead of the market with ease.</div>
+                            <div class="text">Experience heightened transparency and lightning-fast trades on our
+                                platform. With real-time data and rapid execution, stay ahead of the market with ease.
+                            </div>
                         </div>
                     </div>
 
@@ -524,15 +591,18 @@
                                 <span class="icon ti-settings"></span>
                             </div>
                             <h3><a href="#">Special for Multiple Use Capabilities</a></h3>
-                            <div class="text">Discover the ultimate trading tool From style to functionality, these  are more than just an accessory. Explore their versatile features now</div>
+                            <div class="text">Discover the ultimate trading tool From style to functionality, these
+                                are more than just an accessory. Explore their versatile features now</div>
                         </div>
                     </div>
 
                 </div>
                 <div class="service-img-wrapper col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box">
-                        <img draggable="false" src="img/phone.png') }}" class="center-block img-responsive phone-img" alt="">
-                        <img draggable="false" src="{{ asset('home/img/core-img/rings-bg.png') }}" class="center-block img-responsive rings " alt="">
+                        <img draggable="false" src="img/phone.png') }}" class="center-block img-responsive phone-img"
+                            alt="">
+                        <img draggable="false" src="{{ asset('home/img/core-img/rings-bg.png') }}"
+                            class="center-block img-responsive rings " alt="">
                     </div>
                 </div>
             </div>
@@ -553,7 +623,9 @@
                             </div>
                             <div class="col-lg-8 col-md-8 col-xs-12 text-left">
                                 <div class="section-heading text-left">
-                                    <h2 class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Don’t Miss Our News And Updates!</h2>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.3s"
+                                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                        Don’t Miss Our News And Updates!</h2>
                                     <!-- <p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p> -->
                                 </div>
                                 <div class="group">
@@ -600,7 +672,8 @@
                     <div class="dream-faq-area">
                         <dl>
                             <!-- Single FAQ Area -->
-                            <dt class="wave wow fadeInUp" data-wow-delay="0.2s">What are the objectives of this token?</dt>
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.2s">What are the objectives of this token?
+                            </dt>
                             <dd class="wow fadeInUp" data-wow-delay="0.3s">
                                 <p>2.How do I create an account?</p>
                             </dd>
@@ -615,7 +688,8 @@
                                 <p>4.How long does it take for deposits and withdrawals to be processed?</p>
                             </dd>
                             <!-- Single FAQ Area -->
-                            <dt class="wave wow fadeInUp" data-wow-delay="0.5s">4.Can I trade on this platform using a mobile device?</dt>
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.5s">4.Can I trade on this platform using a
+                                mobile device?</dt>
                             <dd>
                                 <p>5.Is there a referral program available?</p>
                             </dd>
@@ -634,7 +708,7 @@
                                 </div>
                                 <div class="counterdown-content">
 
-                                   <!-- <div class="ico-sales-status mb-15 o-hidden">
+                                    <!-- <div class="ico-sales-status mb-15 o-hidden">
                                         <div class="pull-left">
                                             <h3 class="dollar-earning">$7,575,357</h3>
                                             <p style="padding-left:10px">Worth of DREAM tokens</p>
@@ -646,19 +720,40 @@
                                     </div> -->
                                     <!-- Countdown  -->
                                     <div class="count-down titled circled text-center">
-                                        <div class="simple_timer syotimer timer"><div class="timer-head-block"></div><div class="timer-body-block"><div class="table-cell day"><div class="tab-val">122</div><div class="tab-metr tab-unit">days</div></div><div class="table-cell hour"><div class="tab-val">08</div><div class="tab-metr tab-unit">hours</div></div><div class="table-cell minute"><div class="tab-val">52</div><div class="tab-metr tab-unit">minutes</div></div><div class="table-cell second"><div class="tab-val" style="opacity: 1;">58</div><div class="tab-metr tab-unit">seconds</div></div></div><div class="timer-foot-block"></div></div>
+                                        <div class="simple_timer syotimer timer">
+                                            <div class="timer-head-block"></div>
+                                            <div class="timer-body-block">
+                                                <div class="table-cell day">
+                                                    <div class="tab-val">122</div>
+                                                    <div class="tab-metr tab-unit">days</div>
+                                                </div>
+                                                <div class="table-cell hour">
+                                                    <div class="tab-val">08</div>
+                                                    <div class="tab-metr tab-unit">hours</div>
+                                                </div>
+                                                <div class="table-cell minute">
+                                                    <div class="tab-val">52</div>
+                                                    <div class="tab-metr tab-unit">minutes</div>
+                                                </div>
+                                                <div class="table-cell second">
+                                                    <div class="tab-val" style="opacity: 1;">58</div>
+                                                    <div class="tab-metr tab-unit">seconds</div>
+                                                </div>
+                                            </div>
+                                            <div class="timer-foot-block"></div>
+                                        </div>
                                     </div>
                                     <div class="ico-progress">
-                                       <ul class="list-unstyled list-inline clearfix mb-10">
-                                          <li class="title">33m</li>
-                                          <li class="strength">75m</li>
-                                       </ul>
-                                       <!-- skill strength -->
-                                       <div class="current-progress">
-                                          <div class="progress-bar has-gradient" style="width: 75%"></div>
-                                       </div>
-                                       <span class="pull-left">Softcap in 103 days</span>
-                                       <span class="pull-right">Token Hardcap</span>
+                                        <ul class="list-unstyled list-inline clearfix mb-10">
+                                            <li class="title">33m</li>
+                                            <li class="strength">75m</li>
+                                        </ul>
+                                        <!-- skill strength -->
+                                        <div class="current-progress">
+                                            <div class="progress-bar has-gradient" style="width: 75%"></div>
+                                        </div>
+                                        <span class="pull-left">Softcap in 103 days</span>
+                                        <span class="pull-right">Token Hardcap</span>
                                     </div>
                                     <div class="text-center">
                                         <a href="#" class="button mt-30">Buy More Tokens</a>
@@ -674,22 +769,26 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="doc-element">
-                                    <a class="document-entry" href="#" target="_blank"><span class="title">WhitePaper</span></a>
+                                    <a class="document-entry" href="#" target="_blank"><span
+                                            class="title">WhitePaper</span></a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="doc-element">
-                                    <a class="document-entry" href="#" target="_blank"><span class="title">OnePager</span></a>
+                                    <a class="document-entry" href="#" target="_blank"><span
+                                            class="title">OnePager</span></a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="doc-element">
-                                    <a class="document-entry" href="#" target="_blank"><span class="title">Rating Review</span></a>
+                                    <a class="document-entry" href="#" target="_blank"><span
+                                            class="title">Rating Review</span></a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="doc-element">
-                                    <a class="document-entry" href="pdf/fx Tread Presentation.pdf" target="_blank"><span class="title">Marketing Plan</span></a>
+                                    <a class="document-entry" href="pdf/fx Tread Presentation.pdf"
+                                        target="_blank"><span class="title">Marketing Plan</span></a>
                                 </div>
                             </div>
 
@@ -763,7 +862,8 @@
 
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-img" style="background-image: url('{{ asset('home/img/core-img/pattern.png') }}');">
+    <footer class="footer-area bg-img"
+        style="background-image: url('{{ asset('home/img/core-img/pattern.png') }}');">
 
         <!-- ##### Contact Area Start ##### -->
         <div class="contact_us_area" id="contact">
@@ -776,7 +876,8 @@
                                 <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                             </div>
                             <h2 class="wow fadeInUp" data-wow-delay="0.3s">Contact With Us</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                         </div>
                     </div>
                 </div>
@@ -843,9 +944,15 @@
                             <!-- Copywrite -->
                             <div class="copywrite_text wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="footer-logo">
-                                    <a href="/"><img draggable="false" src="{{ asset('asset/logo.png') }}" height="150px" width="150px" alt="logo"></a>
+                                    <a href="/"><img src="{{ asset('asset/logo.png') }}"
+                                            style="height: 120px;width:120px" class="small" alt="logo"></a>
                                 </div>
-                                <p>Our investment plans are designed to provide both guidance and opportunity. With our expertly crafted strategies, discover how even a modest investment can yield substantial returns. Whether you're aiming for short-term gains or long-term stability, our plans cater to your aspirations. Experience the potential to earn significantly more than traditional savings, ensuring your money works as hard as you do. </p>
+                                <p>Our investment plans are designed to provide both guidance and opportunity. With our
+                                    expertly crafted strategies, discover how even a modest investment can yield
+                                    substantial returns. Whether you're aiming for short-term gains or long-term
+                                    stability, our plans cater to your aspirations. Experience the potential to earn
+                                    significantly more than traditional savings, ensuring your money works as hard as
+                                    you do. </p>
                             </div>
                             <!-- Social Icon -->
                             <div class="footer-social-info wow fadeInUp" data-wow-delay="0.4s">
@@ -862,19 +969,35 @@
                         <div class="contact_info_area d-sm-flex justify-content-between">
                             <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.2s">
                                 <h5>QUICK LINKS</h5>
-                                <a href="#home"><p>Home</p></a>
-                                <a href="#about"><p>About</p></a>
-                                <a href="#services"><p>Services</p></a>
-                                <a href="#roadmap"><p>Roadmap</p></a>
+                                <a href="#home">
+                                    <p>Home</p>
+                                </a>
+                                <a href="#about">
+                                    <p>About</p>
+                                </a>
+                                <a href="#services">
+                                    <p>Services</p>
+                                </a>
+                                <a href="#roadmap">
+                                    <p>Roadmap</p>
+                                </a>
 
                             </div>
                             <!-- Content Info -->
                             <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.3s">
                                 <h5>QUICK LINKS</h5>
-                                <a href="#Video"><p>Video</p></a>
-                                <a target="_blank" href="pdf/fx Tread Presentation.pdf"><p>Plan</p></a>
-                                <a href="#team"><p>Team</p></a>
-                                <a href="#contact"><p>Contact</p></a>
+                                <a href="#Video">
+                                    <p>Video</p>
+                                </a>
+                                {{-- <a target="_blank" href="pdf/fx Tread Presentation.pdf">
+                                    <p>Plan</p>
+                                </a> --}}
+                                <a href="#team">
+                                    <p>Team</p>
+                                </a>
+                                <a href="#contact">
+                                    <p>Contact</p>
+                                </a>
                             </div>
                             <!-- Content Info -->
                             <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.4s">

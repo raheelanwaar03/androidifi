@@ -19,7 +19,7 @@
     <link href="{{ asset('asset/vendor/jquery-autocomplete/jquery-ui.css') }}" rel="stylesheet">
     <!-- Style css -->
     <link href="{{ asset('asset/css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
 
 </head>
@@ -82,7 +82,8 @@
         <div class="nav-header">
             <a href="{{ route('User.Dashboard') }}" class="brand-logo">
                 <div class="logo">
-                    <img src="{{ asset('asset/logo.png') }}" class="small" height="120px" width="120px" alt="">
+                    <img src="{{ asset('asset/logo.png') }}" class="small" height="80px" width="80px"
+                        alt="">
                 </div>
             </a>
             <div class="nav-control">
@@ -119,7 +120,8 @@
                                     @if (auth()->user()->pic == '')
                                         <img src="{{ asset('asset/images/profile/profile.png') }}" alt="">
                                     @else
-                                        <img src="{{ asset('images/profile/' . auth()->user()->pic) }}" alt="">
+                                        <img src="{{ asset('images/profile/' . auth()->user()->pic) }}"
+                                            alt="">
                                     @endif
                                     <div class="d-flex align-items-center sidebar-info">
                                         <div class="user-info">
@@ -201,7 +203,8 @@
                     </li>
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
                             <div class="menu-icon">
-                                <i class="fa-solid fa-money-bill-transfer" style="font-size: 15px;margin-right:8px;"></i>
+                                <i class="fa-solid fa-money-bill-transfer"
+                                    style="font-size: 15px;margin-right:8px;"></i>
                             </div>
                             <span class="nav-text">Withdraw</span>
                         </a>
@@ -233,98 +236,6 @@
                             <li><a href="{{ route('User.Team.Mangement') }}">Team Members</a></li>
                         </ul>
                     </li>
-                    {{-- <li><a href="widget-basic.html">
-                            <div class="menu-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.4"
-                                        d="M16.0754 2H19.4614C20.8636 2 21.9999 3.14585 21.9999 4.55996V7.97452C21.9999 9.38864 20.8636 10.5345 19.4614 10.5345H16.0754C14.6731 10.5345 13.5369 9.38864 13.5369 7.97452V4.55996C13.5369 3.14585 14.6731 2 16.0754 2Z"
-                                        fill="#763ed0" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z"
-                                        fill="#B9A8FF" />
-                                </svg>
-                            </div>
-                            <span class="nav-text">Widget</span>
-                        </a>
-                    </li>
-                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-                            <div class="menu-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="IconlyDocument">
-                                        <g id="Document">
-                                            <path id="Document_2" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7.81 2H16.191C19.28 2 21 3.78 21 6.83V17.16C21 20.26 19.28 22 16.191 22H7.81C4.77 22 3 20.26 3 17.16V6.83C3 3.78 4.77 2 7.81 2ZM8.08 6.66V6.65H11.069C11.5 6.65 11.85 7 11.85 7.429C11.85 7.87 11.5 8.22 11.069 8.22H8.08C7.649 8.22 7.3 7.87 7.3 7.44C7.3 7.01 7.649 6.66 8.08 6.66ZM8.08 12.74H15.92C16.35 12.74 16.7 12.39 16.7 11.96C16.7 11.53 16.35 11.179 15.92 11.179H8.08C7.649 11.179 7.3 11.53 7.3 11.96C7.3 12.39 7.649 12.74 8.08 12.74ZM8.08 17.31H15.92C16.319 17.27 16.62 16.929 16.62 16.53C16.62 16.12 16.319 15.78 15.92 15.74H8.08C7.78 15.71 7.49 15.85 7.33 16.11C7.17 16.36 7.17 16.69 7.33 16.95C7.49 17.2 7.78 17.35 8.08 17.31Z"
-                                                fill="#130F26" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <span class="nav-text">Forms</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="form-element.html">Form Elements</a></li>
-                            <li><a href="form-wizard.html">Wizard</a></li>
-                            <li><a href="form-ckeditor.html">CkEditor</a></li>
-                            <li><a href="form-pickers.html">Pickers</a></li>
-                            <li><a href="form-validation.html">Form Validate</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-                            <div class="menu-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="IconlySwap">
-                                        <g id="Swap">
-                                            <path id="Swap_2" fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7.54618 3.27793C7.71236 3.39789 7.98037 3.67345 7.98037 3.67345C9.02079 4.64858 10.5879 7.07394 11.0911 8.30444C11.1016 8.30444 11.4001 9.03608 11.4118 9.38409V9.43041C11.4118 9.96371 11.1133 10.4626 10.6335 10.7179C10.4357 10.8232 9.95456 10.9211 9.72244 10.9683C9.64556 10.984 9.59599 10.9941 9.59308 10.997C8.90727 11.1016 7.85514 11.1704 6.70003 11.1704C5.48757 11.1704 4.38981 11.1016 3.71453 10.9733C3.70282 10.9733 3.08606 10.8462 2.88009 10.7642C2.58282 10.6372 2.3312 10.4044 2.17087 10.1145C2.05618 9.88294 2 9.63827 2 9.38409C2.01053 9.11685 2.18257 8.618 2.26215 8.42083C2.76539 7.12026 4.41204 4.6367 5.41852 3.68532C5.52307 3.57922 5.64206 3.46806 5.72485 3.39071C5.76902 3.34945 5.8029 3.3178 5.81877 3.30169C6.07039 3.10452 6.37936 3 6.71173 3C7.00783 3 7.30509 3.09264 7.54618 3.27793ZM18.2286 10.1618C18.2286 10.6856 17.8108 11.1096 17.2947 11.1096C16.7786 11.1096 16.3608 10.6856 16.3608 10.1618L16.1033 5.58295C16.1033 4.91543 16.637 4.375 17.2947 4.375C17.9524 4.375 18.4849 4.91543 18.4849 5.58295L18.2286 10.1618ZM21.1199 13.2356C21.4172 13.3639 21.6688 13.5955 21.8291 13.8853C21.9438 14.1169 22 14.3616 22 14.617C21.9895 14.883 21.8174 15.3831 21.7367 15.5802C21.2346 16.8797 19.5868 19.3633 18.5815 20.3158C18.4787 20.4194 18.3619 20.5284 18.2793 20.6055L18.2792 20.6055C18.2331 20.6486 18.1976 20.6817 18.1812 20.6983C17.9284 20.8955 17.6206 21 17.2894 21C16.991 21 16.6937 20.9074 16.4538 20.7209C16.2876 20.6021 16.0196 20.3265 16.0196 20.3265C14.978 19.3526 13.4121 16.926 12.9089 15.6954C12.8972 15.6954 12.5999 14.965 12.5882 14.617V14.5706C12.5882 14.0361 12.8855 13.5373 13.3665 13.2819C13.5639 13.1777 14.0435 13.0796 14.2762 13.0319L14.2762 13.0319C14.3539 13.016 14.404 13.0058 14.4069 13.0028C15.0927 12.8983 16.1449 12.8294 17.3 12.8294C18.5124 12.8294 19.6102 12.8983 20.2855 13.0265C20.296 13.0265 20.9139 13.1536 21.1199 13.2356ZM6.70553 12.8905C6.18942 12.8905 5.77161 13.3146 5.77161 13.8383L5.51414 18.4171C5.51414 19.0846 6.04781 19.625 6.70553 19.625C7.36325 19.625 7.89575 19.0846 7.89575 18.4171L7.63945 13.8383C7.63945 13.3146 7.22165 12.8905 6.70553 12.8905Z"
-                                                fill="#130F26" />
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <span class="nav-text">Table</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.html">Datatable</a></li>
-                        </ul>
-                    </li> --}}
-                    {{-- <li>
-                        <a class="has-arrow " href="javascript:void()" aria-expanded="false">
-                            <div class="menu-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.4"
-                                        d="M2.00024 11.0785C2.05024 13.4165 2.19024 17.4155 2.21024 17.8565C2.28124 18.7995 2.64224 19.7525 3.20424 20.4245C3.98624 21.3675 4.94924 21.7885 6.29224 21.7885C8.14824 21.7985 10.1942 21.7985 12.1812 21.7985C14.1762 21.7985 16.1122 21.7985 17.7472 21.7885C19.0712 21.7885 20.0642 21.3565 20.8362 20.4245C21.3982 19.7525 21.7592 18.7895 21.8102 17.8565C21.8302 17.4855 21.9302 13.1445 21.9902 11.0785H2.00024Z"
-                                        fill="#763ed0" />
-                                    <path
-                                        d="M11.2455 15.3842V16.6782C11.2455 17.0922 11.5815 17.4282 11.9955 17.4282C12.4095 17.4282 12.7455 17.0922 12.7455 16.6782V15.3842C12.7455 14.9702 12.4095 14.6342 11.9955 14.6342C11.5815 14.6342 11.2455 14.9702 11.2455 15.3842Z"
-                                        fill="#763ed0" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M10.2114 14.5564C10.1114 14.9194 9.76237 15.1514 9.38437 15.1014C6.83337 14.7454 4.39537 13.8404 2.33737 12.4814C2.12637 12.3434 2.00037 12.1074 2.00037 11.8554V8.3894C2.00037 6.2894 3.71237 4.5814 5.81737 4.5814H7.78437C7.97237 3.1294 9.20237 2.0004 10.7044 2.0004H13.2864C14.7874 2.0004 16.0184 3.1294 16.2064 4.5814H18.1834C20.2824 4.5814 21.9904 6.2894 21.9904 8.3894V11.8554C21.9904 12.1074 21.8634 12.3424 21.6544 12.4814C19.5924 13.8464 17.1444 14.7554 14.5764 15.1104C14.5414 15.1154 14.5074 15.1174 14.4734 15.1174C14.1344 15.1174 13.8314 14.8884 13.7464 14.5524C13.5444 13.7564 12.8214 13.1994 11.9904 13.1994C11.1484 13.1994 10.4334 13.7444 10.2114 14.5564ZM13.2864 3.5004H10.7044C10.0314 3.5004 9.46937 3.9604 9.30137 4.5814H14.6884C14.5204 3.9604 13.9584 3.5004 13.2864 3.5004Z"
-                                        fill="#B9A8FF" />
-                                </svg>
-                            </div>
-                            <span class="nav-text">Pages</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="page-login.html">Login</a></li>
-                            <li><a href="page-register.html">Register</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="page-error-400.html">Error 400</a></li>
-                                    <li><a href="page-error-403.html">Error 403</a></li>
-                                    <li><a href="page-error-404.html">Error 404</a></li>
-                                    <li><a href="page-error-500.html">Error 500</a></li>
-                                    <li><a href="page-error-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page-lock-screen.html">Lock Screen</a></li>
-                            <li><a href="empty-page.html">Empty Page</a></li>
-                        </ul>
-                    </li> --}}
                 </ul>
                 <div class="copyright">
                     <p class="fs-14"><strong>{{ env('APP_NAME') }}</strong> © 2022 All Rights Reserved</p>
