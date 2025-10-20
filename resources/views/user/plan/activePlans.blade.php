@@ -12,10 +12,11 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <div>
-                                        <h3 class="text-center">Active Plans</h3>
-                                        <a href="{{ route('User.Today.Reward') }}" class="btn btn-primary">Get Today
-                                            Reward</a>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="text-center">Active Plans</h3>
+                                            <a href="{{ route('User.Daily.ROI') }}" class="btn btn-primary">Check Daily Roi</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -37,9 +38,9 @@
                                                         <td>{{ $item->amount }}$</td>
                                                         <td>
                                                             @if ($item->status == 'Active')
-                                                            <span class="badge badge-success">{{ $item->status }}</span>
+                                                                <span class="badge badge-success">{{ $item->status }}</span>
                                                             @else
-                                                            <span class="badge badge-danger">{{ $item->status }}</span>
+                                                                <span class="badge badge-danger">{{ $item->status }}</span>
                                                             @endif
                                                         </td>
                                                         <td>{{ $item->expiry }}Days</td>

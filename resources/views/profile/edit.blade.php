@@ -21,7 +21,7 @@
                                     </div>
                                     <div class="profile-email px-2 pt-2">
                                         <h4 class="mb-0">AirDrop</h4>
-                                        <p>{{ number_format(auth()->user()->airdrop,2) }}</p>
+                                        <p>{{ number_format(auth()->user()->unc,2) }}</p>
                                     </div>
                                     <div class="profile-email px-2 pt-2">
                                         <h4 class="mb-0">User ID</h4>
@@ -85,8 +85,7 @@
                                                 <div class="pt-4 border-bottom-1 pb-3">
                                                     <h4 class="text-primary">Company Massage</h4>
                                                     <p class="mb-2">Dear [{{ auth()->user()->name }}],
-                                                        I am thrilled to share with you the progress and vision of [Your
-                                                        Investment Company Name]. As a valued investor, your partnership has
+                                                        I am thrilled to share with you the progress and vision of [{{ env('APP_NAME') }}]. As a valued investor, your partnership has
                                                         been instrumental in propelling our journey towards financial
                                                         success and market leadership. Today, I am excited to showcase how
                                                         your trust and our strategic approach are yielding remarkable

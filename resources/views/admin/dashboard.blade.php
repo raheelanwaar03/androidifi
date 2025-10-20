@@ -277,7 +277,7 @@
                                 </div>
                                 <div class="card-header border-0">
                                     <div class="wallet-info">
-                                        <span class="font-w400 d-block text-white">Totall Plans</span>
+                                        <span class="font-w400 d-block text-white">Total Plans</span>
                                         <h4 class="fs-24 font-w600 mb-0 d-inline-flex me-2">{{ Withdraw() }}</h4>
                                     </div>
                                     <div class="wallet-icon">
@@ -292,9 +292,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card  wallet blue">
+                                <div class="boxs">
+                                    <span class="box one"></span>
+                                    <span class="box two"></span>
+                                    <span class="box three"></span>
+                                    <span class="box four"></span>
+                                </div>
+                                <div class="card-header text-center">
+                                    <a href="{{ route('Admin.Give.Daily.Roi') }}" class="btn btn-lg btn-success">ROI</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <!----/column-- -->
                     </div>
                     <div class="padding">
-                        <h3 class="text-center" >Copyright©{{ env('APP_NAME') }}</h3>
+                        <h3 class="text-center">Copyright©{{ env('APP_NAME') }}</h3>
                     </div>
                 @endsection

@@ -9,41 +9,48 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">History</h4>
+                            <h4 class="card-title">Sold Plans</h4>
+                            <a href="{{ route('Admin.Add.Plan') }}" class="btn btn-primary">Daily Roi</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table id="example" class="display" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>Id</th>
-                                            <th>User Name</th>
-                                            <th>Plan Name</th>
-                                            <th>User ID</th>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Plan</th>
+                                            <th>Investment</th>
+                                            <th>Expiry</th>
                                             <th>Status</th>
-                                            <th>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($plans as $item)
                                             <tr>
-                                                <td>{{ $item->id }}</td>
+                                                <td>{{ $item->user_id }}</td>
                                                 <td>{{ $item->user_name }}</td>
                                                 <td>{{ $item->plan_name }}</td>
-                                                <td>{{ $item->user_id }}</td>
-                                                <td>{{ $item->status }}</td>
-                                                <td>{{ $item->created_at }}</td>
+                                                <td>{{ $item->amount }}$</td>
+                                                <td>{{ $item->expiry }}Days</td>
+                                                <td>
+                                                    @if ($item->status == 'Active')
+                                                        <span class="badge badge-success">{{ $item->status }}</span>
+                                                    @else
+                                                        <span class="badge badge-danger">{{ $item->status }}</span>
+                                                    @endif
+                                                </td>
                                             </tr>
                                         @endforeach
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <th>Id</th>
-                                            <th>User Name</th>
-                                            <th>Plan Name</th>
-                                            <th>User ID</th>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Plan</th>
+                                            <th>Investment</th>
+                                            <th>Expiry</th>
                                             <th>Status</th>
-                                            <th>Date</th>
                                         </tr>
                                     </tfoot>
                                 </table>

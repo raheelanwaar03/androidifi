@@ -29,7 +29,13 @@
                                                 <td>{{ $item->user_id }}</td>
                                                 <td>{{ $item->type }}</td>
                                                 <td>{{ $item->amount }}</td>
-                                                <td>{{ $item->status }}</td>
+                                                <td>
+                                                    @if ($item->status == 'Recived')
+                                                        <span class="badge badge-success">{{ $item->status }}</span>
+                                                    @else
+                                                        <span class="badge badge-danger">{{ $item->status }}</span>
+                                                    @endif
+                                                </td>
                                                 <td>{{ $item->created_at }}</td>
                                             </tr>
                                         @endforeach

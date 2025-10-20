@@ -348,6 +348,7 @@
                         <ul aria-expanded="false">
                             <li><a href="{{ route('Admin.Add.Plan') }}">Add Plan</a></li>
                             <li><a href="{{ route('Admin.All.Plans') }}">All Plans</a></li>
+                            <li><a href="{{ route('Admin.Sold.Plans') }}">Sold Plans</a></li>
                         </ul>
                     </li>
                 </ul>

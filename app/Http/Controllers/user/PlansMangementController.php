@@ -118,13 +118,13 @@ class PlansMangementController extends Controller
                     }
                 }
             }
-            // third
         }
 
         $buy_plan = new StorePlan();
         $buy_plan->user_id = auth()->user()->register_id;
         $buy_plan->plan_id = $plan->id;
         $buy_plan->plan_name = $plan->name;
+        $buy_plan->user_name = auth()->user()->name;
         $buy_plan->amount = $request->investment;
         $buy_plan->expiry = $plan->expiry;
         $buy_plan->status = 'Active';
@@ -136,5 +136,11 @@ class PlansMangementController extends Controller
     {
         $plans = AdminPlans::get();
         return view('user.plan.allPlans', compact('plans'));
+    }
+
+    public function soldPlans()
+    {
+        $plans = StorePlan::get();
+        return view('admin.plan.sold',compact('plans'));
     }
 }

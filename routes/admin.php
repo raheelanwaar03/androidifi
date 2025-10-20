@@ -5,6 +5,7 @@ use App\Http\Controllers\admin\adminDepositController;
 use App\Http\Controllers\admin\AllotPlanToUserController;
 use App\Http\Controllers\admin\PlansController;
 use App\Http\Controllers\admin\userWithdrawalRequests;
+use App\Http\Controllers\user\PlansMangementController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -48,4 +49,7 @@ Route::name('Admin.')->prefix('Admin')->middleware('admin', 'auth')->group(funct
     Route::get('/Make/Withdrawal/Approved/{id}', [userWithdrawalRequests::class, 'makeApproved'])->name('Make.Withdrawal.Approved');
     Route::get('/Make/Withdrawal/Rejected/{id}', [userWithdrawalRequests::class, 'makeRejected'])->name('Make.Withdrawal.Rejected');
     Route::get('/Make/Withdrawal/Pending/{id}', [userWithdrawalRequests::class, 'makePending'])->name('Make.Withdrawal.Pending');
+    // give daily roi
+    Route::get('Give/Daily/Roi',[AdminDashboardController::class,'dailyRoi'])->name('Give.Daily.Roi');
+    Route::get('Sold/Plans',[PlansMangementController::class,'soldPlans'])->name('Sold.Plans');
 });

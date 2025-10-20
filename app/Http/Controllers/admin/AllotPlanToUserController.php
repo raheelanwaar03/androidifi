@@ -20,6 +20,10 @@ class AllotPlanToUserController extends Controller
     {
         $user = User::where('register_id', $request->user_id)->first();
         $plan = AdminPlans::where('name', $request->plan)->first();
+        if($user == '')
+        {
+            return redirect()->back()->with('error','User not found');
+        }
 
         // alloting plan to user
 

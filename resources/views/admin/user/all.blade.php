@@ -47,7 +47,7 @@
                                                 <td>{{ $item->email }}</td>
                                                 <td>{{ $item->balance }}</td>
                                                 <td>{{ $item->phone }}</td>
-                                                <td>{{ $item->airdrop }}</td>
+                                                <td>{{ $item->unc }}</td>
                                                 <td>{{ $item->referral }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td class="d-flex justify-content-align align-items-center">
