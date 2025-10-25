@@ -56,9 +56,11 @@
                                                     <a href="{{ route('Admin.Make.User.Approved', $item->id) }}"
                                                         class="btn btn-sm btn-success">Approved</a>
                                                     <a href="{{ route('Admin.Make.User.Rejected', $item->id) }}"
-                                                        class="btn btn-sm btn-danger">Rejected</a>
+                                                        class="btn btn-sm btn-secondary">Rejected</a>
                                                     <a href="{{ route('Admin.Edit.User', $item->id) }}"
                                                         class="btn btn-sm btn-warning">Edit</a>
+                                                    <a href="{{ route('Admin.Delete.User', $item->id) }}"
+                                                        class="btn btn-sm btn-danger">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach

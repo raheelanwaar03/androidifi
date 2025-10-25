@@ -129,4 +129,11 @@ class AdminDashboardController extends Controller
         }
         return redirect()->back()->with('success', 'Roi added to all users');
     }
+
+    public function deleteUser($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+        return redirect()->back()->with('success', 'User Deleted');
+    }
 }

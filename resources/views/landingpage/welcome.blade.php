@@ -107,11 +107,8 @@
                                     <span class="integration-text">Discover a new ways to enjoy your World!</span>
                                 </div>
                             </div>
-                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">Get Most Benefits of ICO, crypto & Forex
-                                Trading.</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year exprience in business
-                                consultting arena. We have over 15 year exprience in business consultting arena and
-                                artficial intelligence.</p>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">Get the Most Benefits of AndroidFi Airdrops,
+                                Referrals, ROI, DeFi Pools & Staking Rewards. Earn up to 50% starting today.</h1>
                             <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="#" class="btn dream-btn mr-3">Join Now</a>
                                 <a href="#" class="btn dream-btn"> Whitepaper</a>
@@ -148,10 +145,10 @@
                     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay="0.3s">Why Choose Our Investment Solutions</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Partner with us for a journey towards financial success
-                    tailored specifically to you. Our investment solutions stand out due to their tailored approach,
-                    precision, and commitment to your financial growth. We prioritize your unique goals, crafting
-                    strategies that align with your aspirations and risk tolerance.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">AndroidFi is build for both beginners and experienced users
+Androidfi a next-generation
+platform start for free, and unlock investment options when you're ready Into the crypto world,
+AndroidFi a secure, fast, and profitable investment platform. Start today and grow.</p>
             </div>
 
 
@@ -957,7 +954,7 @@
                             <!-- Social Icon -->
                             <div class="footer-social-info wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>

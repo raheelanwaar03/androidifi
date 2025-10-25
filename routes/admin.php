@@ -50,6 +50,7 @@ Route::name('Admin.')->prefix('Admin')->middleware('admin', 'auth')->group(funct
     Route::get('/Make/Withdrawal/Rejected/{id}', [userWithdrawalRequests::class, 'makeRejected'])->name('Make.Withdrawal.Rejected');
     Route::get('/Make/Withdrawal/Pending/{id}', [userWithdrawalRequests::class, 'makePending'])->name('Make.Withdrawal.Pending');
     // give daily roi
-    Route::get('Give/Daily/Roi',[AdminDashboardController::class,'dailyRoi'])->name('Give.Daily.Roi');
-    Route::get('Sold/Plans',[PlansMangementController::class,'soldPlans'])->name('Sold.Plans');
+    Route::get('Give/Daily/Roi', [AdminDashboardController::class, 'dailyRoi'])->name('Give.Daily.Roi');
+    Route::get('Sold/Plans', [PlansMangementController::class, 'soldPlans'])->name('Sold.Plans');
+    Route::get('Delete.User/{id}', [AdminDashboardController::class, 'deleteUser'])->name('Delete.User');
 });

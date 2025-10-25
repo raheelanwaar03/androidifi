@@ -35,7 +35,7 @@
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label for="balance">Balance</label>
-                                                    <input type="number" name="balance" id="balance" class="form-control"
+                                                    <input type="number" name="balance" id="balance" class="form-control" step="0.1"
                                                         value="{{ $user->balance }}">
                                                 </div>
                                             </div>
