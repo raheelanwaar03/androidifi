@@ -43,19 +43,22 @@
                         </div>
                         <form action="{{ route('register') }}" method="POST">
                             @csrf
-                            <input class="form-control" type="text" name="name" placeholder="name" required>
-                            <input class="form-control" type="eamil" name="email" placeholder="eamil" required>
-                            <input class="form-control" type="number" name="phone" placeholder="phone" required
-                                minlength="11">
+                            <input class="form-control" type="text" name="name" placeholder="name"
+                                style="color: black" required>
+                            <input class="form-control" type="eamil" name="email" placeholder="eamil"
+                                style="color: black" required>
+                            <input class="form-control" type="number" name="phone" placeholder="phone"
+                                style="color: black" required minlength="11">
                             <div class="d-flex">
                                 <input class="form-control" type="password" id="password" name="password"
-                                    placeholder="Password" required>
+                                    placeholder="Password" style="color: black" required>
                                 <i class="bi bi-eye" style="margin-left: -30px;margin-top:8px"
                                     onclick="togglePasswordVisibility('password')"></i>
                             </div>
                             <div class="d-flex">
                                 <input class="form-control" type="password" id="confirm_password"
-                                    name="password_confirmation" placeholder="Retype Password" required>
+                                    name="password_confirmation" placeholder="Retype Password" style="color: black"
+                                    required>
                                 <i class="bi bi-eye" style="margin-left: -30px;margin-top:8px"
                                     onclick="togglePasswordVisibility('confirm_password')"></i>
                             </div>
