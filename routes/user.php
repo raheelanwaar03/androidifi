@@ -9,7 +9,7 @@ use App\Http\Controllers\user\UserWithdrawController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::name('User.')->prefix('User')->middleware('user', 'auth', 'verified')->group(function () {
+Route::name('User.')->prefix('User')->middleware('user', 'auth')->group(function () {
 
     Route::get('/Dashboard', [UserDashboardController::class, 'dashboard'])->name('Dashboard');
     Route::post('/Upload/Profile/Picture', [UserDashboardController::class, 'profile_pic'])->name('Profile.Pic');
