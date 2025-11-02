@@ -34,7 +34,7 @@
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Welcome to the new univers of earning!</h3>
-                        <p>Register your account and earn 50 free {{ env('APP_NAME') }} coin.</p>
+                        <p>Register your account and earn 100 free {{ env('APP_NAME') }} coin.</p>
                         <div class="page-links">
                             <a href="{{ route('login') }}"
                                 class="{{ request()->is('login') ? 'active' : '' }}">Login</a><a
