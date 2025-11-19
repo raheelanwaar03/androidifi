@@ -417,8 +417,7 @@ AndroidFi a secure, fast, and profitable investment platform. Start today and gr
     </div>
     <!-- ##### trust Area End ##### -->
 
-    <!-- ##### Our roadmap Area start ##### -->
-    <section class="roadmap section-padding-100"
+    {{-- <section class="roadmap section-padding-100"
         style="background: url('{{ asset('home/img/bg-roadmap.png') }}') no-repeat center center;background-size: cover;"
         id="roadmap">
 
@@ -429,7 +428,6 @@ AndroidFi a secure, fast, and profitable investment platform. Start today and gr
                     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
                 <h2>Our Roadmap</h2>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p> -->
             </div>
             <div class="row">
                 <div class="section_5-content">
@@ -535,8 +533,7 @@ AndroidFi a secure, fast, and profitable investment platform. Start today and gr
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ##### Our roadmap Area End ##### -->
+    </section> --}}
 
 
     <!-- ##### Our features Area start ##### -->
