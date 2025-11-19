@@ -45,8 +45,8 @@ class UserWithdrawController extends Controller
         }
 
         // user can only request withdraw of 10$
-        if ($validated['amount'] > 10) {
-            return redirect()->back()->with('error', 'You can only request withdraw of 10$');
+        if ($validated['amount'] > 5) {
+            return redirect()->back()->with('error', 'You can only request withdraw of 5$');
         }
 
 
